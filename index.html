@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muhammad Rafeh Akram — Backend & Database Developer</title>
+  <meta name="description" content="Portfolio — Muhammad Rafeh Akram | Backend & Database Developer (Java, Python, Oracle DB, Automation, Encryption)" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">M. Rafeh</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-left">
+        <h1 class="name">Muhammad <span class="accent">Rafeh</span> Akram</h1>
+        <p class="subtitle"><span id="typed" aria-live="polite"></span></p>
+        <p class="lead">
+          Computer Science student focused on backend systems, advanced Oracle databases,
+          automation pipelines, and secure encryption/decryption solutions. I write production-ready Java & Python code.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="mailto:mrafehakram@gmail.com">Contact</a>
+        </div>
+
+        <ul class="quick-info">
+          <li><strong>Location:</strong> Pakistan</li>
+          <li><strong>Email:</strong> <a href="mailto:mrafehakram@gmail.com">mrafehakram@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a target="_blank" rel="noopener" href="https://github.com/Rafehak">github.com/Rafehak</a></li>
+          <li><strong>LinkedIn:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/muhammad-rafeh-akram-79201835a">muhammad-rafeh-akram</a></li>
+        </ul>
+      </div>
+
+      <aside class="hero-right">
+        <!-- Floating circular profile image in header -->
+        <div class="profile-card floating" id="profileCard" tabindex="0" aria-label="Profile card">
+          <div class="profile-frame">
+            <!-- Replace profile.jpg with your image filename if different -->
+            <img src="profile.jpg" alt="Muhammad Rafeh Akram" class="profile-img" id="profileImg">
+          </div>
+          <div class="profile-meta">
+            <h3>Muhammad Rafeh Akram</h3>
+            <p class="muted">Backend & Database Developer</p>
+            <div class="skill-tags">
+              <a class="small-link" target="_blank" rel="noopener" href="https://github.com/Rafehak">GitHub</a>
+              <a class="small-link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/muhammad-rafeh-akram-79201835a">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-cards">
+          <div class="card small floating">
+            <strong>Oracle</strong>
+            <p>Advanced DB design & PL/SQL</p>
+          </div>
+          <div class="card small floating delay">
+            <strong>Encryption</strong>
+            <p>Secure storage & key handling</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="bg-blobs" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section id="about" class="section about container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I build backend systems and database solutions using Java and Python, specializing in Oracle Database,
+            PL/SQL, SQL tuning, automation pipelines and secure encryption/decryption strategies. I follow clean, maintainable,
+            production-grade coding practices.
+          </p>
+          <ul>
+            <li>Java (JDBC, multithreading, modular design)</li>
+            <li>Oracle DB (PL/SQL, indexing, backups, advanced SQL)</li>
+            <li>Automation: scripting, CI/CD basics, scheduled tasks</li>
+            <li>Security: encryption, secure storage, access controls</li>
+          </ul>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat floating">
+            <strong>2+</strong><span>Major Projects</span>
+          </div>
+          <div class="stat floating delay">
+            <strong>Advanced</strong><span>Oracle DB</span>
+          </div>
+          <div class="stat floating delay-2">
+            <strong>Production</strong><span>Best Practices</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-pill">Java (Advanced)</div>
+        <div class="skill-pill">Python</div>
+        <div class="skill-pill">SQL</div>
+        <div class="skill-pill">Oracle Database (PL/SQL)</div>
+        <div class="skill-pill">Automation & Scripting</div>
+        <div class="skill-pill">Encryption & Decryption</div>
+        <div class="skill-pill">Networking / Packet Tracer</div>
+        <div class="skill-pill">REST APIs & JDBC</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card floating" tabindex="0" data-project="chatbot">
+          <header>
+            <h3>Java Chatbot</h3>
+            <p class="muted">Modular NLP + conversation manager</p>
+          </header>
+          <p>Built with Java, modular NLP components, state management, and optional Oracle DB persistence for conversation logs.</p>
+          <div class="card-footer">
+            <button class="btn outline" data-open="chatbot">More</button>
+            <span class="tech">Java • NLP • JDBC</span>
+          </div>
+        </article>
+
+        <article class="project-card floating delay" tabindex="0" data-project="hospital">
+          <header>
+            <h3>Hospital Management System</h3>
+            <p class="muted">Secure patient data & role-based access</p>
+          </header>
+          <p>Java-based HMS integrated with Oracle DB, PL/SQL stored procedures, encrypted PHI, and automated backup routines.</p>
+          <div class="card-footer">
+            <button class="btn outline" data-open="hospital">More</button>
+            <span class="tech">Java • Oracle • Security</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact container">
+      <h2>Contact</h2>
+      <p>Interested in collaborating or want code samples? Send an email or check my GitHub.</p>
+      <div class="contact-grid">
+        <div class="contact-card floating">
+          <strong>Email</strong>
+          <a href="mailto:mrafehakram@gmail.com">mrafehakram@gmail.com</a>
+        </div>
+        <div class="contact-card floating delay">
+          <strong>GitHub</strong>
+          <a target="_blank" rel="noopener" href="https://github.com/Rafehak">github.com/Rafehak</a>
+        </div>
+        <div class="contact-card floating delay-2">
+          <strong>LinkedIn</strong>
+          <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/muhammad-rafeh-akram-79201835a">linkedin.com/in/muhammad-rafeh-akram-79201835a</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Muhammad Rafeh Akram — Backend & Database Developer</p>
+    </div>
+  </footer>
+
+  <!-- Project Modals -->
+  <div class="modal" id="modal-chatbot" role="dialog" aria-hidden="true" aria-labelledby="chatbot-title">
+    <div class="modal-panel">
+      <button class="modal-close" data-close>&times;</button>
+      <h3 id="chatbot-title">Java Chatbot — Architecture & Snippets</h3>
+      <p><strong>Stack:</strong> Java, custom NLP modules, JDBC, Oracle DB (optional)</p>
+      <p><strong>Highlights:</strong> modular intent/entity pipeline, session manager, fallback handlers, persistence-ready design.</p>
+      <pre class="code-sample">
+// ConversationManager (simplified)
+public class ConversationManager {
+  private final ConcurrentMap<String, Session> sessions = new ConcurrentHashMap<>();
+  public Response handle(String sessionId, String input) { /* NLP -> intent -> handler -> response */ }
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-hospital" role="dialog" aria-hidden="true" aria-labelledby="hospital-title">
+    <div class="modal-panel">
+      <button class="modal-close" data-close>&times;</button>
+      <h3 id="hospital-title">Hospital Management System — Database & Security</h3>
+      <p><strong>Stack:</strong> Java, Oracle DB, PL/SQL, JDBC, AES encryption</p>
+      <p><strong>Highlights:</strong> role-based access, encrypted PHI, stored-procedures, audit logs and automated backups.</p>
+      <pre class="code-sample">
+// Example PL/SQL (simplified)
+CREATE OR REPLACE PROCEDURE add_patient (
+  p_name VARCHAR2, p_dob DATE, p_data_enc CLOB
+) AS
+BEGIN
+  INSERT INTO patients (id, name, dob, data_enc) VALUES (patients_seq.NEXTVAL, p_name, p_dob, p_data_enc);
+  COMMIT;
+END;
+      </pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
